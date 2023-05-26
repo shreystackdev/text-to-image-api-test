@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.contanEverything{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.backgroundVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    .backgroundVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    .backgroundVideo{
+        width: auto;
+        height: 100%;
+    }
+}
+.content{
+    height: 100%;
+    width: 98%;
+    display: grid;
+    place-items: center;
+}
+h1{
+    color: white;
+    font-family: 'Foldit', cursive;
+    font-style:inherit;
+    font-size: 3rem;
+}
+
+
+
+
+/* search bar  */
+
+#search-input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  width: 200px;
+}
+
+/* Styling for the button */
+#submit-icon {
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, #4CAF50, #45a049);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for the button */
+#submit-icon:hover {
+  background: linear-gradient(to bottom, #45a049, #4CAF50);
+}
+
+/* Active effect for the button */
+#submit-icon:active {
+  background: linear-gradient(to bottom, #3e8e41, #45a049);
+}
+
+
+.image-Section{
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.image-container{
+  width: 40%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: rgb(38, 57, 77)0 20px 30px -10px;
+}
+.image-container img {
+  width: 100%;
+}
+  
